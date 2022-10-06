@@ -6,9 +6,10 @@ Write your name on line 6, save it, and then head back to GitHub Desktop.
 Git testing project
 
 
-Settings.
+Initial Setup:
 
 git config --global user.name "Your name here"
+
 git config --global user.email "your_email_here@a.com"
 
 
