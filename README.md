@@ -8,9 +8,9 @@ Git testing project
 
 Initial Setup:
 
-**git config --global user.name "Your name here"**
+    **git config --global user.name "Your name here"**
 
-**git config --global user.email "your_email_here@a.com"**
+    **git config --global user.email "your_email_here@a.com"**
 
 
 With these commands you indicate your username (you generally use your first and last name) and email. This configuration is used so that when you make commits in the local repository, they are stored with the reference to yourself.
@@ -31,50 +31,54 @@ We begin by adding the file or files to a temporary intermediate area called "In
 
 Any file you want to send to the index zone you do it with the "add" command.
 
-**git add filename**
+    **git add filename**
 
-**git status**
+    **git status**
 
 send multiple files "."
 
-**git add .**
+    **git add .**
 
 commit the files from the Index zone to the repository, which is called the "commit"
 
-**git commit -m "message for the commit"**
+    **git commit -m "message for the commit"**
 
 Then you have to "push" from your local to remote repository with the commands that appear on the Github page
 
-**git remote add origin https://github.com/here-your-repo.git**
+    **git remote add origin https://github.com/here-your-repo.git**
 
-**git push -u origin master**
-**git push -u origin developer**
+    **git push -u origin master**
+    **git push -u origin developer**
 
 You can see the branch you are in at any given time with the command:
-git branch
+
+    **git branch**
 
 
 If you haven't committed your project, you'll notice that no branch has been created yet and the branch command doesn't produce any output.
 
 More detailed description of the branches with this other command:
 
-**git show-branch**
+    **git show-branch**
 
 To move between branches we use the "git checkout" command followed by the name of the branch we want to be active.
 
 The following command, launched from the "master" branch, allows you to merge it with the branch X
-**git merge X**
+
+    **git merge X**
 
 You can publish a remote branch using the push command, indicating the "-u" option and the name of the branch you want to upload.
-**git push -u origin X**
+
+    **git push -u origin X**
 
 The process to get a branch from the remote repository
-**git fetch**
+
+    **git fetch**
 
 Now we can access it
 
-**git checkout my_remote_branch_downloaded**
+    **git checkout my_remote_branch_downloaded**
 
 The "fork" is one of the common operations with the work in Git and GitHub. It basically serves to create a copy of a repository in your user account. That copied repository will basically be a clone of the repository from which the fork is made, but from then on the fork will live in a different space and can evolve differently, at your own expense.
 
-**git checkout developer**
+    **git checkout developer**
